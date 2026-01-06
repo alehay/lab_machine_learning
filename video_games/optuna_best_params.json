@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-01-05T21:23:53.431856",
-  "best_value": 0.051300805456649945,
+  "timestamp": "2026-01-06T08:31:19.002609",
+  "best_value": 0.050834988951243144,
   "best_params": {
-    "bootstrap_type": "Bernoulli",
-    "learning_rate": 0.03830550353885683,
-    "depth": 5,
-    "l2_leaf_reg": 3.96389588638785,
-    "rsm": 0.5290418060840998,
-    "min_data_in_leaf": 44,
-    "random_strength": 6.011150117432088,
-    "subsample": 0.8540362888980227
+    "bootstrap_type": "MVS",
+    "learning_rate": 0.02496808233781365,
+    "depth": 7,
+    "l2_leaf_reg": 2.094044595533715,
+    "rsm": 0.7168377120424515,
+    "min_data_in_leaf": 36,
+    "random_strength": 9.993624386415512,
+    "subsample": 0.9018243063958195
   },
-  "n_trials_completed": 10,
-  "best_trial_number": 1
+  "n_trials_completed": 107,
+  "best_trial_number": 13
 }
