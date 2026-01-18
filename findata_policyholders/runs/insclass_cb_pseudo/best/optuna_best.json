@@ -1,0 +1,23 @@
+{
+  "best_value": 0.7462073668331959,
+  "best_params": {
+    "pseudo_weight": 0.6325808410646967,
+    "pseudo_confidence_threshold": 0.26522551093845415,
+    "bootstrap_type": "MVS",
+    "grow_policy": "Depthwise",
+    "max_ctr_complexity": 6,
+    "border_count": 152,
+    "iterations": 5445,
+    "learning_rate": 0.010066271956342536,
+    "depth": 9,
+    "l2_leaf_reg": 24.10210265744582,
+    "random_strength": 0.655267441296238,
+    "min_data_in_leaf": 13,
+    "one_hot_max_size": 21,
+    "auto_class_weights": null,
+    "rsm": 0.9646389004284953,
+    "subsample": 0.7393379797227385,
+    "early_stopping_rounds": 274
+  },
+  "completed_trials": 50
+}

@@ -1,0 +1,82 @@
+{
+  "files": {
+    "train_path": "insclass_train.csv",
+    "test_path": "insclass_test.csv",
+    "pseudo_path": "score_068192.csv"
+  },
+  "output_dir": "runs/insclass_cb_pseudo/20260108_200057",
+  "device": "cpu",
+  "seeds": [
+    42,
+    7896,
+    99999999,
+    568,
+    789
+  ],
+  "tuning": {
+    "trials": 50,
+    "timeout_sec": null,
+    "tune_splits": 3,
+    "best_cv_auc_mean": 0.7462073668331959,
+    "study_db": "runs/insclass_cb_pseudo/20260108_200057/optuna_study.db",
+    "best_params": {
+      "pseudo_weight": 0.6325808410646967,
+      "pseudo_confidence_threshold": 0.26522551093845415,
+      "bootstrap_type": "MVS",
+      "grow_policy": "Depthwise",
+      "max_ctr_complexity": 6,
+      "border_count": 152,
+      "iterations": 5445,
+      "learning_rate": 0.010066271956342536,
+      "depth": 9,
+      "l2_leaf_reg": 24.10210265744582,
+      "random_strength": 0.655267441296238,
+      "min_data_in_leaf": 13,
+      "one_hot_max_size": 21,
+      "auto_class_weights": null,
+      "rsm": 0.9646389004284953,
+      "subsample": 0.7393379797227385,
+      "early_stopping_rounds": 274
+    }
+  },
+  "metrics": {
+    "oof_auc_avg": 0.7472055344892296,
+    "fold_auc_all": [
+      0.7465411248918723,
+      0.7454738295340413,
+      0.7424702989514271,
+      0.7453399038503055,
+      0.7515405511808837,
+      0.7445939737827204,
+      0.7497950293043499,
+      0.7522499277480984,
+      0.7440651179636331,
+      0.7421826674518301,
+      0.7401134968643592,
+      0.7408547178873035,
+      0.7502670340896163,
+      0.749828782056905,
+      0.7533746675314169,
+      0.742761237329552,
+      0.7540001078494033,
+      0.7403264828986326,
+      0.7503990582482887,
+      0.7457902378452305,
+      0.7577558568234968,
+      0.74431160698263,
+      0.7491277315650087,
+      0.7426355832244694,
+      0.7420050739696359
+    ],
+    "fold_auc_mean": 0.7467121639930044,
+    "fold_auc_std": 0.004723578414263544
+  },
+  "threshold_by_f1": {
+    "thr": 0.4208080808080808,
+    "f1": 0.43324675324675327
+  },
+  "submission": {
+    "binary_path": "runs/insclass_cb_pseudo/20260108_200057/submission.csv",
+    "proba_path": "runs/insclass_cb_pseudo/20260108_200057/submission_proba.csv"
+  }
+}
